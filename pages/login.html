@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - ToDentro</title>
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/login.css">
+</head>
+<body>
+    <div class="background" id="login-background">
+        <div class="frame-login">
+            <img src="../assets/images/logo-cabeçalho.png" alt="Logo" class="logo-login" />
+            <hr class="linha-login" />
+            
+            <!-- Mensagem de erro (inicialmente oculta) -->
+            <div class="error-message" id="error-message" style="display: none;"></div>
+            
+            <form id="login-form" class="formulario-login">
+                <label for="email">Seu E-mail</label>
+                <input 
+                    type="email" 
+                    id="email"
+                    name="email"
+                    placeholder="exemplo@email.com" 
+                    class="input-email"
+                    required
+                />
+                
+                <label for="password">Sua Senha</label>
+                <input 
+                    type="password" 
+                    id="password"
+                    name="password"
+                    placeholder="••••••••" 
+                    class="input-senha"
+                    required
+                />
+                
+                <button type="submit" class="botao-login">Login</button>
+            </form>
+            
+            <div class="links-extras">
+                <a href="#" class="esqueceu-senha">Esqueceu sua senha?</a>
+                <p>Não tem uma conta? <a href="signup.html" class="link-cadastro">Cadastre-se</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/login.js"></script>
+</body>
+</html>
